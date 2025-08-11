@@ -1,1 +1,114 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <img src="assets/logo.svg" alt="logo" width="28" height="28">
+      <span>Portfolio</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle theme">· · ·</button>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+      <p class="subtitle">Short one-liner about what you do.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+    <img class="hero-img" src="assets/profile.jpg" alt="Profile" />
+  </main>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>Replace with a crisp 3–5 sentence bio. Mention your stack, interests, and what you’re open to.</p>
+    <ul class="badges">
+      <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node</li><li>Python</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card-list">
+      <article class="card">
+        <header>
+          <h3>Role @ Company</h3>
+          <small>2023 — Present</small>
+        </header>
+        <ul>
+          <li>Impactful bullet with numbers (e.g., “reduced build time 40%”).</li>
+          <li>Another concrete achievement.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <h3>Prior Role @ Company</h3>
+          <small>2021 — 2023</small>
+        </header>
+        <ul>
+          <li>Achievement.</li>
+          <li>Achievement.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="tile">
+        <h3>Project One</h3>
+        <p>What it does + tech used.</p>
+        <div class="links">
+          <a href="#" target="_blank" rel="noreferrer">Live</a>
+          <a href="#" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+      <article class="tile">
+        <h3>Project Two</h3>
+        <p>What it does + tech used.</p>
+        <div class="links">
+          <a href="#" target="_blank" rel="noreferrer">Live</a>
+          <a href="#" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+      <article class="tile">
+        <h3>Project Three</h3>
+        <p>What it does + tech used.</p>
+        <div class="links">
+          <a href="#" target="_blank" rel="noreferrer">Live</a>
+          <a href="#" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:you@example.com">you@example.com</a> or find me on <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
